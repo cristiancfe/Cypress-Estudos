@@ -1,0 +1,14 @@
+{
+  "name": "cypress-alura",
+  "version": "1.0.0",
+  "description": "Cypress Alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open "
+  },
+  "author": "Cristian Fabiano Eisenhut",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.1.1"
+  }
+}
