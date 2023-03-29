@@ -5,7 +5,7 @@ para tirar o focoe fazer aparecer a mensagem de erro
 ajuda a diminuir as linhas de código
 
 exemplos de códigos para formulário com validação
-
+ 
 describe('Login e registro de usuarios alura pic', () => {
 
     beforeEach(() => {
@@ -95,7 +95,12 @@ describe('Login e registro de usuarios alura pic', () => {
         cy.get('input[formcontrolname="password"]').type('123456789123456').blur();
         cy.contains('ap-vmessage', 'Maximun length is 18').should('not.be.visible');
     })
-
-
+ 
+    comandos 
+    npm run test - abre a interface do cypress
+    npx cypress open - abre a interface do cypress
+    npx cypress run - roda em modo headless
+    add only - roda testes selecionados
+    
 })
 

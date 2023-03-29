@@ -9,6 +9,11 @@
   "author": "Cristian Fabiano Eisenhut",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.1.1"
+    "@shelex/cypress-allure-plugin": "^2.37.0",
+    "cypress": "^9.1.1",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "mocha-allure-reporter": "^1.4.0"
   }
 }
