@@ -101,6 +101,7 @@ describe('Login e registro de usuarios alura pic', () => {
     npx cypress open - abre a interface do cypress
     npx cypress run - roda em modo headless
     add only - roda testes selecionados
+    npx cypress run --reporter mochawesome - gera relatório com mochawesome
     
 })
 

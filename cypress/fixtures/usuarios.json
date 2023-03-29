@@ -1,0 +1,20 @@
+[
+  {
+    "email":"bobesponja@teste.com.br",
+    "fullName":"esponja",
+    "userName":"bob",
+    "password":"123456"
+  },
+  {
+    "email":"patrick@teste.com.br",
+    "fullName":"estrela",
+    "userName":"patrick",
+    "password":"123456"
+  },
+  {
+    "email":"lula@teste.com.br",
+    "fullName":"molusco",
+    "userName":"lula",
+    "password":"123456"
+  }
+]
