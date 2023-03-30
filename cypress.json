@@ -4,7 +4,10 @@
     "reporterDir": "cypress/report/mochawesome-report",
     "overwrite": true,
     "html": true,
-    "json": false,
+    "charts": true,
+    "json": true,
+    "code": true,
+    "reportTitle": "Teste da Alura PIC",
     "timestamp": "dd-mm-yyyy_HH:MM:ss"    
   },
   "projectId": "ybviaq"
