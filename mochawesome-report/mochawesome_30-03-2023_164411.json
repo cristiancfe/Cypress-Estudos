@@ -1,0 +1,113 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-30T19:44:01.013Z",
+    "end": "2023-03-30T19:44:11.322Z",
+    "duration": 10309,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9e0a6386-af2e-40a7-a081-1e7ccc5084bd",
+      "title": "",
+      "fullFile": "cypress/integration/AluraPic/aluraPic.spec.js",
+      "file": "cypress/integration/AluraPic/aluraPic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3bc3481d-ccc2-4713-8f5b-5fd8200a4002",
+          "title": "alura PIC",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar botão habilitado na tela inicial",
+              "fullTitle": "alura PIC Verificar botão habilitado na tela inicial",
+              "timedOut": null,
+              "duration": 7238,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[formcontrolname=\"userName\"]').type('flavio');\ncy.get('input[formcontrolname=\"password\"]').type('123'); //cy.get('button[type=\"submit\"]').click(); \ncy.contains('a', '(Logout)').should('be.enabled');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '(Logout)' within the selector: 'a' but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '(Logout)' within the selector: 'a' but never did.\n    at Context.eval (https://alura-fotos.herokuapp.com/__cypress/tests?p=cypress\\integration\\AluraPic\\aluraPic.spec.js:176:34)",
+                "diff": null
+              },
+              "uuid": "d04a0068-6765-429c-8854-87ccbe42f401",
+              "parentUUID": "3bc3481d-ccc2-4713-8f5b-5fd8200a4002",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d04a0068-6765-429c-8854-87ccbe42f401"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7238,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reporterDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "charts": true,
+        "json": true,
+        "code": true,
+        "reportTitle": "Teste da Alura PIC",
+        "timestamp": "dd-mm-yyyy_HH:MM:ss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

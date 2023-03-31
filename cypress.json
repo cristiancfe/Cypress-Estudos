@@ -10,5 +10,6 @@
     "reportTitle": "Teste da Alura PIC",
     "timestamp": "dd-mm-yyyy_HH:MM:ss"    
   },
-  "projectId": "ybviaq"
+  "projectId": "ybviaq",
+  "baseUrl": "https://alura-fotos.herokuapp.com"
 }

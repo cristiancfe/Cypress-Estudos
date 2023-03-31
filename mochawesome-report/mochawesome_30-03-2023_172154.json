@@ -1,0 +1,113 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-03-30T20:21:43.427Z",
+    "end": "2023-03-30T20:21:54.354Z",
+    "duration": 10927,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "71e91fb6-7fd7-464a-9d88-85a38c52e084",
+      "title": "",
+      "fullFile": "cypress/integration/AluraPic/aluraPic.spec.js",
+      "file": "cypress/integration/AluraPic/aluraPic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6c3b6012-9315-4adf-adf8-281cd37109d7",
+          "title": "alura PIC",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Buscar fotos do flavio",
+              "fullTitle": "alura PIC Buscar fotos do flavio",
+              "timedOut": null,
+              "duration": 7736,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//temppo escolhido de forma sorteada, randomica\nconst tempoEsperado = Math.random() * 2000;\ncy.request({\n  method: 'GET',\n  url: 'https://apialurapic.herokuapp.com/flavio/photos'\n}).then(res => {\n  expect(res.status).to.be.equal(200);\n  expect(res.body).is.not.empty;\n  expect(res.body[0]).to.have.property('description');\n  expect(res.body[0].descripition).to.be.equal('Farol iluminado');\n  expect(res.duration).to.be.lte(tempoEsperado);\n});",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'Farol iluminado'",
+                "estack": "AssertionError: expected undefined to equal 'Farol iluminado'\n    at Context.eval (https://alura-fotos.herokuapp.com/__cypress/tests?p=cypress\\integration\\AluraPic\\aluraPic.spec.js:232:46)",
+                "diff": null
+              },
+              "uuid": "96a6a6f9-1028-425e-9558-17027c16e11c",
+              "parentUUID": "6c3b6012-9315-4adf-adf8-281cd37109d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "96a6a6f9-1028-425e-9558-17027c16e11c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7736,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reporterDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "charts": true,
+        "json": true,
+        "code": true,
+        "reportTitle": "Teste da Alura PIC",
+        "timestamp": "dd-mm-yyyy_HH:MM:ss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

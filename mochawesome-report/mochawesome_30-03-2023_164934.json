@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-30T19:49:27.305Z",
+    "end": "2023-03-30T19:49:34.414Z",
+    "duration": 7109,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8ff64f4d-33fa-49ec-b12d-7b6859867f4d",
+      "title": "",
+      "fullFile": "cypress/integration/AluraPic/aluraPic.spec.js",
+      "file": "cypress/integration/AluraPic/aluraPic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b0d718ec-edbd-45d7-9416-bf201ea9b4c9",
+          "title": "alura PIC",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar botão habilitado na tela inicial",
+              "fullTitle": "alura PIC Verificar botão habilitado na tela inicial",
+              "timedOut": null,
+              "duration": 2948,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[formcontrolname=\"userName\"]').type('flavio');\ncy.get('input[formcontrolname=\"password\"]').type('123');\ncy.get('button[type=\"submit\"]').should('be.enabled');",
+              "err": {},
+              "uuid": "4a777b62-7041-4540-be7f-d32c35efcf29",
+              "parentUUID": "b0d718ec-edbd-45d7-9416-bf201ea9b4c9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar nome da aplicação na tela inicial",
+              "fullTitle": "alura PIC Verificar nome da aplicação na tela inicial",
+              "timedOut": null,
+              "duration": 1087,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'ALURAPIC').should('be.visible');",
+              "err": {},
+              "uuid": "7b7e58b1-a91a-4ca4-87a1-1c3f074996a7",
+              "parentUUID": "b0d718ec-edbd-45d7-9416-bf201ea9b4c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4a777b62-7041-4540-be7f-d32c35efcf29",
+            "7b7e58b1-a91a-4ca4-87a1-1c3f074996a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4035,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reporterDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "charts": true,
+        "json": true,
+        "code": true,
+        "reportTitle": "Teste da Alura PIC",
+        "timestamp": "dd-mm-yyyy_HH:MM:ss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

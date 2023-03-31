@@ -102,6 +102,11 @@ describe('Login e registro de usuarios alura pic', () => {
     npx cypress run - roda em modo headless
     add only - roda testes selecionados
     npx cypress run --reporter mochawesome - gera relatório com mochawesome
+    quando incluimos o parâmetro {logs: false} na função que faz a digitação da senha, para não mostrar na interface gráfica do cypress o valor digitado
+
+    conceitos 
+    Flaky tests - testes que ora falham e ora passam , ex: testar tempo de resposta , dependendo do tempo setado e da resposta, pode falhar ou passar .
+    
     
 })
 
