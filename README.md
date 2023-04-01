@@ -107,6 +107,7 @@ describe('Login e registro de usuarios alura pic', () => {
     conceitos 
     Flaky tests - testes que ora falham e ora passam , ex: testar tempo de resposta , dependendo do tempo setado e da resposta, pode falhar ou passar .
     
-    
+     *** Gerar relatorio com allure ***
+     **** npm run test e depois npx allure serve allure-results ****
 })
 

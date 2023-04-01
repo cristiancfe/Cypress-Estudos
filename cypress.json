@@ -5,11 +5,12 @@
     "overwrite": true,
     "html": true,
     "charts": true,
-    "json": true,
+    "json": false,
     "code": true,
     "reportTitle": "Teste da Alura PIC",
     "timestamp": "dd-mm-yyyy_HH:MM:ss"    
   },
   "projectId": "ybviaq",
-  "baseUrl": "https://alura-fotos.herokuapp.com"
+  "baseUrl": "https://alura-fotos.herokuapp.com",
+  "allureResults":"allure-results" 
 }
